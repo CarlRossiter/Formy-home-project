@@ -13,11 +13,9 @@ public class DropDown {
 		
 		driver.get("https://formy-project.herokuapp.com/dropdown");
 		
-		WebElement dropDownMenu = driver.findElement(By.id("dropdownMenuButton"));
-		dropDownMenu.click();
+		driver.findElement(By.id("dropdownMenuButton")).click();
 		
-		WebElement autocompleteItem = driver.findElement(By.id("autocomplete"));
-		autocompleteItem.click();
+		driver.findElement(By.id("autocomplete")).click();
 		
 		driver.quit();
 	}
